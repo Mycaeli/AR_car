@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AaeyZrf/////AAABmUTjxgIwN02bk58F4V8HuPp6tG4hFgyG1QqZWeTjvrGyCFFQd2eZdr0amKv2hMVidlNLfm5SxD1vKx8N9G9/SMVWJMRZfjxrKoc43o8/QzqKfFJwMGuXAPpYMjIBBPEyVMnmi+Ki3+Ah09QAg8F2AaxKmivLAdwzZP16cl6ZowgYgmzmO2dIstsmvVewhpU2TjVie6mYKO0CzY9Jod2ncghCUg6L1ScZnY0KAJZ/heJV6lQ/dwOd1N2dMuh4hqtaDgHmvU1G02bXqtZT132vn2JWJRj57DVR3p3iHb7+SEfvW/m837mnkLChcCsG5i8o2esjY9wYnpi7ja/dtm6h5wDy+N/i9ODsSbLXDTyxClaS
-    ufoLicenseKey: QVNQcWZvNy8vLy8vQUFBQUtLYWlleExkYTBCSW5FKzYvTFRCaTNBM1ltVlc3NDdFNFZQc2FnQVJNbkt5MkR1bGtyWXB3bUdYMDJTR1dnVW1QdVZmdlhxYmQ0akZiZFAzUDVZb1VVY0RLeU9KYXlKWWZQaFZZbGpOU2ZVMHM1M2ZVQWU5blhxUGlUYzdEZDc1elVvUzdoakw1cGtuV1F1VTFKSFdNTm5vSlpIWVNkanNOMmxnVjV6UFRabC9mMUlQYUxLUWdYTk93ay9KNFJkU2Y3Qzc3U2JUVXNaS2hYY3ZrdDR1UnhFOVdMZmZ1VFJLU0gyQWFCZEUxWlZuWk5Od2w3N2w3UmF5cnlNMWlhNlQzQ281b2p3VTFLWmhHMjgxd0w4Q09JaXZoTTdWSysxMnpqQ0hKVFYvQ0E3RFJqTURlbEdaeHFYeXIyQ3hSaVZ5a3FMaWRaWU5EMkc3NFRxRnQ1RVorYnBIVEFOMmZ5RTdRR1BzOGVJS2p5dFM=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QWIzczBrZi8vLy8vQUFBQUtPem1ITXg1RlU3MG1sdjkxZVY4VzB0dFR2c0dVbnMwSEdHYlZCRnVWbnlxK1ZGQ3VHbGVnMnkreHorcjB1WGk0cGtWQncvRFdxL1UxTjBweG9JaytUTFU5Z0pGcHBac2RnQTVXUVk0bTUySkg1T2JwYzBGV0I1MVdQWWhBWmk3c3NWeGRjK1ZpL3dCM2h6UWMzNXp4Y284MFNaNy9GMmc1ZlE2MS9FRk4xb0hGc2lUZm11dmNPTnpWYTJqNDdoeFgveFM1UlUvWEFHQVFiOFNJQTNld09vUmx6ZUhSNkhadFlZRVJ1TmdaZ1dKMEd4VkRTbnpiSDFxQVBuaWZzK2gzT05mUldBR0p2UDBCMklSMDNualM3aVZqTFZBYlEwQkxxamJxNlpxN2dXTWtHVEpiY0NDN2t5Vk9xMWsyR0pHcnFpTFZ5TU52WmRiQWc5dFlLSFJweTJoRUpGSU0zTUNqY0x5MFRLMWYrY2I=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -23,7 +23,7 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 10.20.3
+    version: 10.0.2
     eulaAcceptedVersions: '{"Values":["","0.0","10.20"]}'
   database:
     disableModelExtraction: 0
@@ -40,11 +40,11 @@ MonoBehaviour:
     autoStartTracker: 1
     arcoreRequirement: 1
     autoImportArcore: 1
-    thirdPartyARCoreClientDetected: 1
+    thirdPartyARCoreClientDetected: 0
   playmode:
     mRecordingPath: 
     playModeType: 0
   webcam:
     renderTextureLayer: 30
   packageInformation:
-    ARFoundationVersion: 5.0.7
+    ARFoundationVersion: 
