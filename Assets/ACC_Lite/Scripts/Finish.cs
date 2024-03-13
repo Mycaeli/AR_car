@@ -25,5 +25,6 @@ public class Finish : MonoBehaviour
             Debug.Log("¡Línea de meta a tiempo! Tiempo final: " + finishTime);
         }
     }
+
 }
 
