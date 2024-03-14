@@ -2,29 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI; // Agregar esta línea para usar UI elements
 
 public class Finish : MonoBehaviour
 {
-    private bool raceFinished = false;  // Variable para verificar si la carrera ha terminado
-    private float finishTime;           // Variable para almacenar el tiempo de finalización
+    public GameObject finishButton; // Referencia al botón que quieres mostrar al pasar por la meta
+
+    private bool raceFinished = false;
+    private float finishTime;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Car") && !raceFinished)
         {
-            raceFinished = true;  // Marcar la carrera como finalizada para evitar múltiples ejecuciones
+            raceFinished = true;
 
-            // Detener el contador (Timer)
             Timer timerScript = FindObjectOfType<Timer>();
             if (timerScript != null)
             {
                 timerScript.StopTimer();
-                finishTime = timerScript.GetElapsedTime();  // Obtener el tiempo actual del contador
+                finishTime = timerScript.GetElapsedTime();
             }
 
             Debug.Log("¡Línea de meta a tiempo! Tiempo final: " + finishTime);
+
+            // Activa el botón al cruzar la línea de meta
+            if (finishButton != null)
+            {
+                finishButton.SetActive(true);
+            }
         }
     }
-
 }
-
