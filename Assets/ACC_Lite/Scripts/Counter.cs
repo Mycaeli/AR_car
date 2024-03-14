@@ -25,10 +25,10 @@ public class Counter : MonoBehaviour
 
     void UpdateCount()
     {
-        text.text = $"{count} / {Collectable.total}";
+        text.text = $"{count} / {9}";
 
         // Verificar si count y Collectable.total son iguales
-        if (count == Collectable.total)
+        if (count == 9)
         {
             FinishLine.SetActive(true);
         }
