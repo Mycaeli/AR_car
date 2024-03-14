@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="circuit" size="612.000000 490.000000" />
+    <ImageTarget name="hotwheels" size="1500.000000 992.000000" />
     <ImageTarget name="Hiro" size="280.000000 280.639282" />
   </Tracking>
 </QCARConfig>
