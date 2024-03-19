@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float driftFrictionMultiplier = 0.2f; // Adjust for desired slipperiness
     public float driftForceMultiplier = 2.0f; // Adjust for desired driftiness
     public float driftAngleThreshold = 30.0f; // Adjust for drift initiation angle
+
 
     private Rigidbody2D rb;
 
@@ -21,8 +23,8 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        float verticalInput = Input.GetAxis("Vertical");
-        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = CrossPlatformInputManager.GetAxis("Vertical");
+        float horizontalInput = CrossPlatformInputManager.GetAxis("Horizontal");
 
 
         transform.Translate(Vector3.forward * verticalInput * speed * Time.deltaTime);
